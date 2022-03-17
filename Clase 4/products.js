@@ -9,7 +9,7 @@ class Productos {
     // Guarda un producto
     create(producto, res) {
         let productos = []; 
-        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido)  => {
+        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido) => {
             if (error) {
                 console.log('Error al guardar producto')
                 producto.id = 1;
@@ -31,7 +31,7 @@ class Productos {
     // Busca un producto por ID
     read(Number, producto) {
         let productos = []; 
-        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido)  => {
+        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido) => {
             if(error) {
                 console.log('Error al buscar producto')
                 producto(null);
@@ -45,7 +45,7 @@ class Productos {
     // Busca todos los productos
     readAll(all) {
         let productos = []; 
-        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido)  => {
+        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido) => {
             if(error) {
                 console.log('Error al obtener los productos')
                 all(null);
@@ -66,16 +66,16 @@ class Productos {
         return id;
     }
     // Modifica un producto
-    update(producto, res) {
+    update(producto, id, res) {
         let productos = []; 
-        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido)  => {
+        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido) => {
             if (error) {
                 res('Error al modificar producto')
                 return true;
-            } else {      
+            } else {
                 productos = JSON.parse(contenido);
                 for(let i of productos){
-                    if (i.id == producto.id){
+                    if (i.id == id){
                         i.title = producto.title;
                         i.price = producto.price;
                         i.thumbnail = producto.thumbnail;
@@ -89,7 +89,7 @@ class Productos {
     // Borra un producto por ID
     delete(Number, res) {
         let productos = []; 
-        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido)  => {
+        productos = fs.readFile(this.archivo, 'utf-8', (error, contenido) => {
             if (error) {
                 res('Error al borrar producto')
             } else {
@@ -100,7 +100,6 @@ class Productos {
                         res(`No encuentra el producto con ID ${Number}`)
                     } else {
                         const i = productos.indexOf(prod);
-                        console.log(`Indice ${i}`)
                         productos.splice(i, 1);
                         this.save(productos)
                         res(`Producto con ID ${Number} eliminado`)
@@ -113,7 +112,7 @@ class Productos {
     }
     // Guarda un producto en archivo JSON
     save(productos) {
-        fs.writeFile(this.archivo, JSON.stringify(productos), error =>{
+        fs.writeFile(this.archivo, JSON.stringify(productos), error => {
             if (error) {
                 console.log('Error al guardar archivo JSON');
             } else {

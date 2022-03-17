@@ -49,8 +49,8 @@ routerProducts.put("/:id", (req, res) => {
     try {
         const prod = new Productos(`products.json`);
         const productoNuevo = req.body;
-        console.log(productoNuevo);
-        prod.update(productoNuevo, prod => {
+        const id = parseInt(req.params.id)
+        prod.update(productoNuevo, id, prod => {
             res.status(200).send(productoNuevo);
         });
     } catch (err) {
