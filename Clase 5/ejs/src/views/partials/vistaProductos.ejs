@@ -1,0 +1,23 @@
+<div class="container m-3">
+  <h3>Productos registrados</h3>
+  <!-- Tabla de productos -->
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% productos.forEach(function(prod){ %>
+        <tr>
+          <td><%= prod.title %></td>
+          <td><%= prod.price %></td>
+          <td><img alt="Imagen" style="width: 50px;" src=<%= prod.thumbnail %>></td>
+        </tr>
+        <% }) %>
+    </tbody>
+  </table>
+  <a href="/" class="btn btn-primary m-3" role="button"><i class="bi-house"></i> Inicio</a>
+</div>

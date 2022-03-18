@@ -1,0 +1,23 @@
+<div class="container m-3">
+  <h3>Productos registrados</h3>
+  <!-- Tabla de productos -->
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+      {{#each productos}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>{{this.price}}</td>
+          <td><img alt="Imagen" style="width: 50px;" src={{this.thumbnail}}></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <a href="/" class="btn btn-primary m-3" role="button"><i class="bi-house"></i> Inicio</a>
+</div>

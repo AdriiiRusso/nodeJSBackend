@@ -1,0 +1,28 @@
+
+<div class="container m-3">
+  <h3>Carga de productos</h3>
+  <!-- Formulario para alta de productos -->
+  <form action="/productos" method="POST" enctype="application/x-www-form-urlencoded">
+    <div class="mb-3 col-2">
+      <label for="title" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="title" required/>
+    </div>
+    <div class="mb-3 col-1">
+      <label for="price" class="form-label">Precio</label>
+      <input type="number"  class="form-control" name="price" required/>
+    </div>
+    <div class="mb-3 col-8">
+      <label for="thumbnail" class="form-label">URL de la imagen</label>
+      <input id="url" type="text" class="form-control" name="thumbnail" required/>
+    </div>
+    <button class="btn btn-primary m-3" type="submit"><i class="bi bi-check-square-fill"></i> Cargar</button>
+    <a href="/productos" class="btn btn-secondary m-3" role="button"><i class="bi bi-collection-play-fill"></i> Ver productos cargados</a>
+  </form>
+  <hr/>
+  <div class="container">
+    <h5>Imagenes precargadas</h5>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png')"><i class="bi bi-image"></i> Imagen 1</button>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png')"><i class="bi bi-image"></i> Imagen 2</button>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png')"><i class="bi bi-image"></i> Imagen 3</button>
+  </div>
+</div>

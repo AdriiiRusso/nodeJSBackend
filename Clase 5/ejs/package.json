@@ -1,0 +1,17 @@
+{
+  "name": "ejs",
+  "version": "1.0.0",
+  "description": "Desafío clase 5 - EJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect ./src/server.js"
+  },
+  "author": "Adrián Russo",
+  "license": "Alguna",
+  "dependencies": {
+    "express": "^4.17.3",
+    "ejs": "^3.1.6",
+    "nodemon": "^2.0.15"
+  }
+}
