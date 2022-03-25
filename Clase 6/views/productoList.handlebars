@@ -1,0 +1,28 @@
+<div class="container m-3">
+    <h1 class="m-2">Productos registrados</h1>
+    {{#if productosList}}
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Foto</th>
+            </tr>
+            {{#each productosList}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.title}}</td>
+                    <td>$ {{this.price}}</td>
+                    <td><img alt="Imagen" style="width: 50px;" src="{{this.thumbnail}}"></td>
+                </tr>
+            {{/each}}
+        </table>
+    {{else}}
+        <div class="m-5">
+            <h2>No hay productos cargados</h2>
+        </div>
+    {{/if}}
+    <a href="/">
+        <button class="btn btn-primary"><strong>Agregar producto</strong></button>
+    </a>
+</div>
