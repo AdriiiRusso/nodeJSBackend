@@ -1,0 +1,94 @@
+<div class="container m-2">
+    <h1>Chat con nosotros</h1>
+    <div id="listMessages"></div>
+    <div class="container">
+        <h3>Enviar mensaje</h3>
+        <form id="chatForm">
+            <div class="col-4 mb-3">
+                <label for="email" class="form-label"><strong>E - mail</strong></label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Este será visible por todos en el chat.</div>
+            </div>
+            <div class="mb-3">
+                <label for="msg" class="form-label"><strong>Mensaje</strong></label>
+                <textarea class="form-control" id="msg" name="msg" rows="5" maxlength="1500"></textarea>
+            </div>
+            <button type="submit" id="sendButton" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+    const socket = io();
+
+    const buttonSend = document.getElementById("sendButton");
+    const sender = document.getElementById("email");
+    const message = document.getElementById("msg");
+    const listMessages = document.getElementById("listMessages");
+
+    socket.on("initial", (messages) => {
+        fetch('http://localhost:8080/products/json')
+        .then(response => response.json())
+        .then(data => {
+            let productsList = data.productosList;
+            let container = document.getElementById('containerProductList');
+            let buffer = `  <div class="container m-3">
+                                <h1>Productos registrados</h1>
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Foto</th>
+                                    </tr>`
+            productsList.forEach( product => {
+                buffer += ` <tr>
+                                <td>${product.id}</td>
+                                <td>${product.title}</td>
+                                <td>$ ${product.price.toFixed(2)}</td>
+                                <td><img alt="Imagen" style="width: 50px;" src="${product.thumbnail}"></td>
+                            </tr>`});
+            buffer += "</table>"
+            container.innerHTML = buffer;
+        });
+        listMessages.innerHTML = '';
+        writeMessages(messages);
+    });
+
+    buttonSend.addEventListener('click', (e) => {
+        e.preventDefault();
+        if(sender.value == ''){
+        
+            sender.classList.add("is-invalid");
+        } else {
+            socket.emit("sendMessage",{
+                sender : sender.value,
+                message : message.value,
+            });
+            sender.value = '';
+            message.value = '';
+        }
+    });
+
+    sender.addEventListener('change', () => {
+        sender.classList.remove('is-invalid');
+    })
+
+    socket.on("enviarMensaje", data => {
+        listMessages.innerHTML = '';
+        writeMessages(data);
+    });
+
+    const writeMessages = (messages) => {
+        messages.forEach( message => {
+            listMessages.innerHTML += ` <div class="alert alert-primary" role="alert">
+                                            <h5 class="alert-heading">${message.sender}</h5>
+                                            <p>Hora de envío: ${message.timestamp}</p>
+                                            <hr>
+                                            <p class="mb-0">${message.message}</p>
+                                        </div>`
+        });
+    }
+</script>

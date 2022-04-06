@@ -1,0 +1,30 @@
+<div class="container m-2">
+  <h1>Agregar productos</h1>
+  <form method="POST" id="formAdd">
+    <div class="mb-3 col-2">
+      <label for="title" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="title" id="nameProduct" required/>
+    </div>
+    <div class="mb-3 col-1">
+      <label for="price" class="form-label">Precio</label>
+      <input type="number"  class="form-control" name="price" id="priceProduct" required/>
+    </div>
+    <div class="mb-3 col-8">
+      <label for="thumbnail" class="form-label">URL de la imagen</label>
+      <input id="url" type="text" class="form-control" name="thumbnail" id="imageProduct" required/>
+    </div>
+    <button class="btn btn-primary m-3" type="submit"><i class="bi bi-check-square-fill"></i> Cargar</button>
+  </form>
+  <div class="container">
+    <h5>Imagenes precargadas</h5>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png')"><i class="bi bi-image"></i> Escuadra</button>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png')"><i class="bi bi-image"></i> Calculadora</button>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png')"><i class="bi bi-image"></i> Globo terráqueo</button>
+  </div>
+</div>
+<script>
+    const copiar = (url) => {
+        const obj = document.getElementById('url');
+        obj.value = url;
+    }
+</script>

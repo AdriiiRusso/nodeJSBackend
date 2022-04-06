@@ -1,0 +1,61 @@
+<script>
+    $(document).ready(function () {
+        $(".eliminar").click(function () {
+            let producto = $(this).val();
+            let url = "./api/productos/"
+            $.ajax({
+            type: "DELETE",
+            url: url + producto
+            }).done(function(data){
+                respuesta = data;
+                alert(respuesta);
+                location.reload();
+            });
+        });
+        $(".modificar").click(function () {
+            let producto = $(this).val();
+            let title = prompt("Ingresar el título del producto");
+            let price = prompt("Ingresar el precio del producto");
+            let thumbnail = prompt("Ingresar la URL de la imagen del producto");
+            let url = "./api/productos/"
+            $.ajax({
+            type: "PUT",
+            url: url + producto,
+            data: {title: title, price: price, thumbnail: thumbnail}
+            }).done(function(data){
+                respuesta = data;
+                location.reload();
+            });
+        });
+    });
+</script>
+<div class="container m-2">
+    <h1>Todos los productos</h1>
+    {{#if productos}}
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Miniatura</th>
+                <th>Acciones</th>
+            </tr>
+            {{#each productos}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.title}}</td>
+                    <td>$ {{this.price}}</td>
+                    <td><img alt="Imagen" style="width: 50px;" src="{{this.thumbnail}}"></td>
+                    <td style="width: 25%;">
+                        <button class="btn btn-primary modificar" value="{{this.id}}" role="button">Modificar</button>
+                        <button class="btn btn-danger eliminar" value="{{this.id}}" role="button">Eliminar</button>
+                    </td>
+                </tr>
+            {{/each}}
+        </table>
+    {{else}}
+        <div class="m-5">
+            <h2>No hay productos cargados</h2>
+        </div>
+    {{/if}}
+</div>

@@ -1,0 +1,58 @@
+<script>
+    $(document).ready(function () {
+        $(".agregar").click(function () {
+            let producto = $(this).val();
+            let cantidad = 1;
+            let url = "/api/carritos/5ca44937-79b0-401b-bf00-9a7543c19693/productos/"
+            $.ajax({
+            type: "POST",
+            url: url,
+            data: {id: producto, amount: 1}
+            }).done(function(data){
+                respuesta = data;
+                alert(respuesta);
+                location.reload();
+            }).fail(function(data){
+                respuesta = data;
+                alert(respuesta.responseJSON);
+                location.reload();
+            });
+        });
+    });
+</script>
+<div class="container m-2">
+    <h1>¡Bienvenidos a tienda NJS!</h1>
+    {{#if productos}}
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            {{#each productos}}
+            <div class="col mb-3">
+                <div class="card">
+                    <img src="{{this.thumbnail}}" class="card-img-top" alt="Imagen">
+                    <div class="card-header">
+                        <h3>{{this.title}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Producto con el identificador {{this.id}}</p>
+                        <h4>Precio ${{this.price}}</h4>
+                        <h5>Cantidad</h5>
+                        <center>
+                            <select class="form-select cantidad" style="width: 15%;">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </center>
+                        <button type="button" class="btn btn-primary mt-2 agregar" value="{{this.id}}">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    {{else}}
+        <div class="m-5">
+            <h2>No hay productos cargados</h2>
+        </div>
+    {{/if}}
+</div>

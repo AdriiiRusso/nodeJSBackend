@@ -1,0 +1,52 @@
+<script>
+    $(document).ready(function () {
+        $(".eliminar").click(function () {
+            let producto = $(this).val();
+            let url = "/api/carritos/5ca44937-79b0-401b-bf00-9a7543c19693/producto/"
+            $.ajax({
+            type: "DELETE",
+            url: url + producto
+            }).done(function(data){
+                respuesta = data;
+                alert(respuesta);
+                location.reload();
+            });
+        });
+        $(".finish").click(function () {
+            alert("Compra realizada, gracias por usar nuestra tienda");
+            location.replace("/");
+        });
+    });
+</script>
+<div class="container m-2">
+    <h1>Carrito de compras</h1>
+    {{#if carrito}}
+    <div class="container-fluid col-6">
+        <ol class="list-group list-group-numbered">
+            {{#each carrito.productos}}
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{this.title}}</div>
+                </div>
+                <span class="badge bg-primary rounded-pill">Cantidad: {{this.amount}}</span>  
+                <div class="ms-4">
+                    <button class="btn btn-danger eliminar" value="{{this.id}}">Eliminar</button>
+                </div>
+                 
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+    <div class="container mt-2">
+        <h3>Total del carrito</h3>
+        <p><strong>${{total}}</strong></p>
+    </div>
+    <div class="container mt-2">
+        <button class="btn btn-lg btn-primary finish">Realizar compra</button>
+    </div>
+    {{else}}
+        <div class="m-5">
+            <h2>No hay productos en el carrito</h2>
+        </div>
+    {{/if}}
+</div>
