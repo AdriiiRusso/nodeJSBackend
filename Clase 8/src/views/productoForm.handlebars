@@ -1,0 +1,129 @@
+<div class="container m-3">
+  <h1>Carga de productos</h1>
+  <!-- Formulario para alta de productos -->
+  <form method="POST">
+    <div class="mb-3 col-2">
+      <label for="title" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="title" required/>
+    </div>
+    <div class="mb-3 col-1">
+      <label for="price" class="form-label">Precio</label>
+      <input type="number"  class="form-control" name="price" required/>
+    </div>
+    <div class="mb-3 col-8">
+      <label for="thumbnail" class="form-label">URL de la imagen</label>
+      <input id="url" type="text" class="form-control" name="thumbnail" required/>
+    </div>
+    <button class="btn btn-primary m-3" type="submit"><i class="bi bi-check-square-fill"></i> Cargar</button>
+    <a href="/products" class="btn btn-secondary m-3" role="button"><i class="bi bi-collection-play-fill"></i> Ver productos cargados</a>
+  </form>
+  <div class="container">
+    <h5>Imagenes precargadas</h5>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png')"><i class="bi bi-image"></i> Escuadra</button>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png')"><i class="bi bi-image"></i> Calculadora</button>
+    <button class="btn btn-sm btn-primary" onclick="copiar('https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png')"><i class="bi bi-image"></i> Globo terráqueo</button>
+  </div>
+</div>
+<hr/>
+<!-- Container para productos cargados en tiempo real -->
+<div id="containerProductList"></div>
+<hr/>
+<!-- Container para los mensajes -->
+<div class="container">
+    <h1>Enviar mensaje</h1>
+    <form id="chatForm">
+        <div class="col-4 mb-3">
+            <label for="email" class="form-label"><strong>E - mail</strong></label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Este será visible por todos en el chat.</div>
+        </div>
+        <div class="mb-3">
+            <label for="msg" class="form-label"><strong>Mensaje</strong></label>
+            <textarea class="form-control" id="msg" name="msg" rows="5" maxlength="1500"></textarea>
+        </div>
+        <button type="submit" id="sendButton" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+<hr/>
+<!-- Container para los mensajes enviados -->
+<div class="container">
+    <h1>Mensajes enviados</h1>
+    <div id="listMessages"></div>
+</div>
+<br>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+    const socket = io();
+
+    const buttonSend = document.getElementById("sendButton");
+    const sender = document.getElementById("email");
+    const message = document.getElementById("msg");
+    const listMessages = document.getElementById("listMessages");
+
+    socket.on("initial", (messages) => {
+        fetch('http://localhost:8080/products/json')
+        .then(response => response.json())
+        .then(data => {
+            let productsList = data.productosList;
+            let container = document.getElementById('containerProductList');
+            let buffer = `  <div class="container m-3">
+                                <h1>Productos registrados</h1>
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Foto</th>
+                                    </tr>`
+            productsList.forEach( product => {
+                buffer += ` <tr>
+                                <td>${product.id}</td>
+                                <td>${product.title}</td>
+                                <td>$ ${product.price}</td>
+                                <td><img alt="Imagen" style="width: 50px;" src="${product.thumbnail}"></td>
+                            </tr>`});
+            buffer += "</table>"
+            container.innerHTML = buffer;
+        });
+        listMessages.innerHTML = '';
+        writeMessages(messages);
+    });
+
+    buttonSend.addEventListener('click', (e) => {
+        e.preventDefault();
+        if(sender.value == ''){
+        
+            sender.classList.add("is-invalid");
+        } else {
+            socket.emit("sendMessage",{
+                sender : sender.value,
+                message : message.value,
+            });
+            sender.value = '';
+            message.value = '';
+        }
+    });
+
+    sender.addEventListener('change', () => {
+        sender.classList.remove('is-invalid');
+    })
+
+    socket.on("enviarMensaje", data => {
+        listMessages.innerHTML = '';
+        writeMessages(data);
+    });
+
+    const writeMessages = (messages) => {
+        messages.forEach( message => {
+            listMessages.innerHTML += ` <div class="alert alert-primary" role="alert">
+                                            <h5 class="alert-heading">${message.sender}</h5>
+                                            <p>Hora de envío: ${message.timestamp}</p>
+                                            <hr>
+                                            <p class="mb-0">${message.message}</p>
+                                        </div>`
+        });
+    }
+</script>
