@@ -1,0 +1,13 @@
+{
+  "name": "normalizacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  
+  "dependencies": {
+    "normalizr": "3.6.2"
+  },
+  "author": "Adrián Russo",
+  "license": "Alguna"
+}

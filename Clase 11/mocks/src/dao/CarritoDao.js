@@ -1,0 +1,57 @@
+import "../config/db.js";
+import { CarritosModel } from '../modules/carritos.modules.js';
+
+export class CarritoDao {
+    _ID = "_id";
+    
+    async createCart() {
+        try {
+            return await CarritosModel.create({});
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+    
+    async deleteCartById(id) {
+        try {
+            return await CarritosModel.findByIdAndDelete({[this._ID]: id})
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+
+    async saveProductToCart(id, obj) {
+        try {
+            const cart = await CarritosModel.findById(id)
+            cart.products.push(obj.productId);
+            cart.save();
+            return true;
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+    
+    async deleteProductFromCart(id, productId) {
+        try {
+            const cart = await CarritosModel.findById(id);
+            cart.products.remove(productId);
+            cart.save();
+            return true;
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+    
+    async getAllProductsFromCart(id) {
+        try {
+            return await CarritosModel.findById(id).populate('products').select({products: 1, _id:0});
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+    }
+}
