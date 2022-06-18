@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"3e5f22b4cf61468cad844a66beefa5a5","collectionName":"mensajes","type":"collection"}
