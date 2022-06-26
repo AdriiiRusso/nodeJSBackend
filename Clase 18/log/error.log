@@ -1,0 +1,20 @@
+[2022-06-11T22:16:53.860] [ERROR] default - Error al conectarse a MongoDB
+[2022-06-11T22:18:23.147] [ERROR] default - Conectado a MongoDB
+[2022-06-25T21:47:00.683] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z23-20020a4ad1b7000000b0035eb4e5a6b6sm3723833oor.12 - gsmtp
+    at SMTPConnection._formatError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 18\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 18\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 18\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 18\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 18\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 18\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials z23-20020a4ad1b7000000b0035eb4e5a6b6sm3723833oor.12 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
