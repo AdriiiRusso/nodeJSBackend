@@ -1,0 +1,416 @@
+[2022-07-17T19:59:02.647] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:01:13.535] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:02:17.026] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:04:26.016] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:04:45.212] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:05:52.841] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:06:14.035] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:06:44.071] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:07:04.675] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:07:39.747] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:08:04.483] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:08:18.462] [ERROR] default - CastError: Cast to ObjectId failed for value "non-existent-id" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"non-existent-id"',
+  kind: 'ObjectId',
+  value: 'non-existent-id',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:10:13.081] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta"',
+  kind: 'ObjectId',
+  value: 'fruta',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:10:37.685] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta"',
+  kind: 'ObjectId',
+  value: 'fruta',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:11:01.327] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta"',
+  kind: 'ObjectId',
+  value: 'fruta',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:12:29.988] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta"',
+  kind: 'ObjectId',
+  value: 'fruta',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:12:30.018] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta2" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta2"',
+  kind: 'ObjectId',
+  value: 'fruta2',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:13:22.961] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta"',
+  kind: 'ObjectId',
+  value: 'fruta',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:13:23.004] [ERROR] default - CastError: Cast to ObjectId failed for value "fruta2" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4715:21)
+    at model.Query.Query.then (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:4814:15) {
+  messageFormat: undefined,
+  stringValue: '"fruta2"',
+  kind: 'ObjectId',
+  value: 'fruta2',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast\objectid.js:24:12)
+      at ObjectId.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schema\objectid.js:247:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\schematype.js:1590:20)
+      at cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\cast.js:344:32)
+      at model.Query.Query.cast (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 21\node_modules\mongoose\lib\query.js:5137:12),
+  valueType: 'string'
+}
+[2022-07-17T20:25:39.848] [ERROR] default - Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (C:\Users\Adrian\Desktop\nodeJSBackend\Clase 22\node_modules\express\lib\application.js:618:24)
+    at file:///C:/Users/Adrian/Desktop/nodeJSBackend/Clase%2022/src/index.js:78:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:385:24)
+    at async loadESM (node:internal/process/esm_loader:88:5)
+    at async handleMainPromise (node:internal/modules/run_main:61:12) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}

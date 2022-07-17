@@ -1,0 +1,10 @@
+<h2>Hola, esta es la página de inicio</h2>
+    {{#if status}}
+        <h4>Sesión iniciada correctamente.</h4>
+        <p>Solo iniciando sesión podés disfrutar del siguiente video</p>
+        <div class="embed-responsive embed-responsive-16by9">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/J30WzfFO6vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    {{else}}
+       <h4>No se encuentra iniciada la sesión.</h4>
+    {{/if}}
