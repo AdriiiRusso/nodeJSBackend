@@ -1,0 +1,24 @@
+{
+  "name": "twentythree",
+  "version": "1.0.0",
+  "description": "Desafío clase 23",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "graphql": "^15.8.0",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-graphql": "^0.12.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^12.0.0",
+    "log4js": "^6.6.0",
+    "mongoose": "^6.4.6"
+  },
+  "scripts": {
+    "start": "nodemon --inspect ./src/index.js"
+  },
+  "author": "Adrián Russo",
+  "licence": "Alguna"
+}
