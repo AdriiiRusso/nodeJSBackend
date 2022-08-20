@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "f4890799-f591-446a-bb53-efca31f38fe9",
+		"name": "NodeJS Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10613983"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/productos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "thumbnail",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "C1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/productos/?title=TEST&price=1234&thumbnail=TEST",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "TEST"
+						},
+						{
+							"key": "price",
+							"value": "1234"
+						},
+						{
+							"key": "thumbnail",
+							"value": "TEST"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/productos/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "La prueba",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "thumbnail",
+							"value": "La imagen",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/productos/6300285ecfd681855fa9bec8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"6300285ecfd681855fa9bec8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/productos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/productos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/productos/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/productos/6300285ecfd681855fa9bec8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"6300285ecfd681855fa9bec8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/carritos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carritos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carritos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/carritos/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carritos/6300281fcfd681855fa9bec4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carritos",
+						"6300281fcfd681855fa9bec4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/carritos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carritos/62ffb2ce3c73cac9bd85be02/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carritos",
+						"62ffb2ce3c73cac9bd85be02",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/carritos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/carritos/6300281fcfd681855fa9bec4/productos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carritos",
+						"6300281fcfd681855fa9bec4",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/carritos/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/carritos/6300281fcfd681855fa9bec4/productos/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carritos",
+						"6300281fcfd681855fa9bec4",
+						"productos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
